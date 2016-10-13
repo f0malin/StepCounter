@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@import HealthKit;
 
 @interface ViewController : UIViewController
 
+@property (nonatomic) HKHealthStore *healthStore;
+@property (nonatomic) HKDevice *device;
 
+- (IBAction)buttonPressed:(id)sender;
 @end
 
